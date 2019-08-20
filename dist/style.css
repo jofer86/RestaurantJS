@@ -1,0 +1,153 @@
+* {
+  margin: 0; }
+
+body {
+  margin: 0;
+  font-family: 'Lato'; }
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url("taqitou.jpg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: 100vw 100vh;
+  flex-wrap: wrap; }
+
+.tacobox {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; }
+
+.taco-one,
+.taco-two,
+.taco-three {
+  font-size: 150px;
+  color: #f5e9da;
+  font-weight: bold; }
+
+.taco-one {
+  animation-name: paco;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  margin: 0; }
+
+.taco-two {
+  animation-name: paco2;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  margin: 0; }
+
+.taco-three {
+  font-size: 40px; }
+
+.arrow__container {
+  align-self: flex-end;
+  animation-name: bounce;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite; }
+  .arrow__container i {
+    color: #f5e9da;
+    font-size: 60px; }
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-100px); }
+  50% {
+    transform: translateY(0); }
+  100% {
+    transform: translateY(-100px); } }
+
+.taco-nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: center; }
+  .taco-nav ul li {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 2rem;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 10vh;
+    padding: 1rem;
+    transition: all .5s; }
+    .taco-nav ul li:hover {
+      background-color: orangered;
+      color: #f5e9da;
+      cursor: pointer; }
+
+.menu__container {
+  background-color: orangered; }
+
+.contact,
+.find {
+  height: 100vh;
+  display: flex; }
+
+.contact__container {
+  background-color: blue; }
+
+.find__container {
+  background-color: #aaaad6; }
+
+.menu {
+  display: flex;
+  justify-content: center;
+  background-color: orangered; }
+  .menu h1 {
+    background-color: white;
+    padding: 1rem; }
+
+.menu-content {
+  display: flex;
+  flex-direction: column; }
+
+.clicked {
+  background-color: orangered;
+  color: #f5e9da; }
+
+.item1 {
+  animation-name: enter; }
+
+.item2 {
+  animation-name: enter-2; }
+
+.item1,
+.item2 {
+  display: flex;
+  justify-content: center;
+  margin: 40px;
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 15px;
+  background-color: whitesmoke;
+  animation-duration: 1s; }
+
+.food-image-contaner {
+  display: inline-block;
+  overflow: hidden;
+  border-radius: 25px;
+  border: 3px solid orangered;
+  margin: 20px; }
+
+.food-image {
+  transition: all .8s;
+  border-radius: 25px; }
+  .food-image:hover {
+    transform: scale(1.2);
+    border: 3px solid orangered; }
+
+@keyframes enter {
+  0% {
+    transform: translateX(1200px); }
+  100% {
+    transform: translateX(0); } }
+
+@keyframes enter-2 {
+  0% {
+    transform: translateX(-1200px); }
+  100% {
+    transform: translateX(0); } }
