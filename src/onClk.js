@@ -2,7 +2,6 @@ import { getDOM } from './UIController';
 import { cont } from './Content';
 
 const { menu, contact, find } = cont();
-const { contactContent } = getDOM();
 
 const onClk = () => {
   return {  
