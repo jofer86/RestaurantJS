@@ -10,4 +10,4 @@ const initializer = () => {
     ele.addEventListener('click', (e) => clicked(e));
   });
 };
-initializer();
+initializer(); 

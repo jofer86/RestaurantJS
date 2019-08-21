@@ -10,4 +10,4 @@ const getDOM = () => ({
   findContent: document.querySelector('.find__container'),
 });
 
-export default getDOM;
+export default getDOM; 
