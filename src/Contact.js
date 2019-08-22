@@ -5,12 +5,11 @@ const Contact = (() => {
     const tacoNtact = document.createElement('div');
     const remo = document.querySelector('.remove');
     if (remo) {
-      remo.remove()
+      remo.remove();
     }
     tacoNtact.className = 'contact__container remove';
     getDOM.content.appendChild(tacoNtact);
-    document.querySelector('.contact__container').innerHTML = 
-      `<div class="contact">
+    document.querySelector('.contact__container').innerHTML = `<div class="contact">
         <h1 id="jumpHere">Contact Us!</h1>
       </div>
 
@@ -26,10 +25,10 @@ const Contact = (() => {
           <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos dolore saepe nesciunt. Nesciunt voluptates perspiciatis necessitatibus sit, neque qui consectetur? Debitis libero rem deleniti alias assumenda distinctio optio sit aliquid.</p>
           <button class="contact__card--button"> Get in touch </button>
         </div>
-      </div>`
+      </div>`;
     window.location = 'index.html#jumpHere';
-  }
-  return { render }
+  };
+  return { render };
 })();
 
 export default Contact;

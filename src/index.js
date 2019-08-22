@@ -1,7 +1,7 @@
 import _ from 'lodash';
 import onload from './Content';
 import Menu from './Menu';
-import Contact from './Contact'
+import Contact from './Contact';
 import Find from './Find';
 
 const clicked = (e) => {
@@ -25,12 +25,12 @@ const clicked = (e) => {
 };
 
 const initializer = () => {
-  onload.render();  
+  onload.render();
   const clickEvent = document.querySelectorAll('.clickEvent');
   _.each(clickEvent, (ele) => {
     ele.addEventListener('click', (e) => {
-      clicked(e)
+      clicked(e);
     });
   });
 };
-initializer(); 
+initializer();
