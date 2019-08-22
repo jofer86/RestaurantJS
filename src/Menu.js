@@ -1,14 +1,14 @@
-import getDOM from './UIController';
+import getDOM from './UIController'
 
 const Menu = (() => {
   const render = () => {
-    const tacoMen = document.createElement('div');
-    const remo = document.querySelector('.remove');
+    const tacoMen = document.createElement('div')
+    const remo = document.querySelector('.remove')
     if (remo) {
-      remo.remove();
+      remo.remove()
     }
-    tacoMen.className = 'menu__container remove';
-    getDOM.content.appendChild(tacoMen);
+    tacoMen.className = 'menu__container remove'
+    getDOM.content.appendChild(tacoMen)
     document.querySelector('.menu__container').innerHTML = `<div class="menu">
       <h1 id="jumpHere">Our Menu!</h1>
       </div>
@@ -49,11 +49,11 @@ const Menu = (() => {
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi ex dolorum consequatur possimus beatae praesentium nemo id tenetur! Illum, quod libero quidem illo repellendus soluta ipsam minima! Quibusdam, minima similique. Cupiditate dignissimos natus illum aperiam magni sed iure nulla culpa, dolorem commodi nam id debitis quidem perspiciatis quibusdam dolor veniam?</p>
         </div>
       </div>
-    </div>`;
+    </div>`
 
-    window.location = 'index.html#jumpHere';
-  };
-  return { render };
-})();
+    window.location = 'index.html#jumpHere'
+  }
+  return { render }
+})()
 
-export default Menu;
+export default Menu

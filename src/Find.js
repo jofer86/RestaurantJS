@@ -1,14 +1,14 @@
-import getDOM from './UIController';
+import getDOM from './UIController'
 
 const Find = (() => {
   const render = () => {
-    const tacoFind = document.createElement('div');
-    const remo = document.querySelector('.remove');
+    const tacoFind = document.createElement('div')
+    const remo = document.querySelector('.remove')
     if (remo) {
-      remo.remove();
+      remo.remove()
     }
-    tacoFind.className = 'find__container remove';
-    getDOM.content.appendChild(tacoFind);
+    tacoFind.className = 'find__container remove'
+    getDOM.content.appendChild(tacoFind)
     document.querySelector('.find__container').innerHTML = `<div class="map__container">
         <div class="map" style="max-width:100%;list-style:none; transition: none;overflow:hidden;width:500px;height:500px;">
           <div id="embeddedmap-canvas" style="height:100%; width:100%;max-width:100%;">
@@ -20,10 +20,10 @@ const Find = (() => {
           </style>
         </div>
       </div>
-      <h1 id="jumpHere" class="map__message"> Find Us, I dare you! </h1>`;
-    window.location = 'index.html#jumpHere';
-  };
-  return { render };
-})();
+      <h1 id="jumpHere" class="map__message"> Find Us, I dare you! </h1>`
+    window.location = 'index.html#jumpHere'
+  }
+  return { render }
+})()
 
-export default Find;
+export default Find
