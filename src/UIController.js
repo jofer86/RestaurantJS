@@ -7,7 +7,7 @@ const getDOM = (() => ({
   tacoNav: document.querySelector('.taco-nav'),
   menuContent: document.querySelector('.menu__container'),
   contactContent: document.querySelector('.contact__container'),
-  findContent: document.querySelector('.find__container'),
-}))();
+  findContent: document.querySelector('.find__container')
+}))()
 
-export default getDOM; 
+export default getDOM
