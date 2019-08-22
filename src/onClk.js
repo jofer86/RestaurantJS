@@ -24,7 +24,7 @@ const onClk = () => (
       }
       tacoNtact.className = 'contact__container remove';
       getDOM().content.appendChild(tacoNtact);
-      getDOM().contact__container = contact;
+      getDOM().contactContent.innerHTML = contact;
       window.location = 'index.html#jumpHere';
     },
     find: () => {
