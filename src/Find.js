@@ -8,8 +8,8 @@ const Find = (() => {
       remo.remove();
     }
     tacoFind.className = 'find__container remove';
-    getDOM().content.appendChild(tacoFind);
-    getDOM().findContent.innerHTML = 
+    getDOM.content.appendChild(tacoFind);
+    document.querySelector('.find__container').innerHTML = 
       `<div class="map__container">
         <div class="map" style="max-width:100%;list-style:none; transition: none;overflow:hidden;width:500px;height:500px;">
           <div id="embeddedmap-canvas" style="height:100%; width:100%;max-width:100%;">

@@ -8,8 +8,8 @@ const Contact = (() => {
       remo.remove()
     }
     tacoNtact.className = 'contact__container remove';
-    getDOM().content.appendChild(tacoNtact);
-    getDOM().contactContent.innerHTML = 
+    getDOM.content.appendChild(tacoNtact);
+    document.querySelector('.contact__container').innerHTML = 
       `<div class="contact">
         <h1 id="jumpHere">Contact Us!</h1>
       </div>

@@ -8,8 +8,8 @@ const Menu = (() => {
       remo.remove();
     }
     tacoMen.className = 'menu__container remove';
-    getDOM().content.appendChild(tacoMen);
-    getDOM().menuContent.innerHTML =
+    getDOM.content.appendChild(tacoMen);
+    document.querySelector('.menu__container').innerHTML =
     
     `<div class="menu">
       <h1 id="jumpHere">Our Menu!</h1>

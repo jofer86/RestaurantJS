@@ -12,10 +12,10 @@ const onload = (() => {
     tacoBo.className = 'taco-nav';
     newNode.className = 'hero';
 
-    getDOM().content.appendChild(newNode);
-    getDOM().hero.innerHTML = tacoBox;
-    getDOM().content.appendChild(tacoBo);
-    getDOM().tacoNav.innerHTML = tacoNavi;
+    getDOM.content.appendChild(newNode);
+    document.querySelector('.hero').innerHTML = tacoBox;
+    getDOM.content.appendChild(tacoBo);
+    document.querySelector('.taco-nav').innerHTML = tacoNavi;
   }
   return { render };
 })();
