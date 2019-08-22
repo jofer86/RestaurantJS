@@ -20,11 +20,11 @@ const onClk = () => (
       const tacoNtact = document.createElement('div');
       const remo = document.querySelector('.remove');
       if (remo) {
-        remo.remove()./node_modules/.bin/eslint --init;
-      }./node_modules/.bin/eslint --init
-      tacoNtact.class./node_modules/.bin/eslint --initName = 'contact__container remove';
-      getDOM().conten./node_modules/.bin/eslint --initt.appendChild(tacoNtact);
-      getDOM().contac./node_modules/.bin/eslint --inittContent.innerHTML = contact;
+        remo.remove()
+      }
+      tacoNtact.className = 'contact__container remove';
+      getDOM().content.appendChild(tacoNtact);
+      getDOM().contact__container = contact;
       window.location = 'index.html#jumpHere';
     },
     find: () => {
