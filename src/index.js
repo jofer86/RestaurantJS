@@ -7,7 +7,9 @@ const initializer = () => {
   onload();
   const clickEvent = document.querySelectorAll('.clickEvent');
   _.each(clickEvent, (ele) => {
-    ele.addEventListener('click', (e) => clicked(e));
+    ele.addEventListener('click', (e) => {
+      clicked(e)
+    });
   });
 };
 initializer(); 

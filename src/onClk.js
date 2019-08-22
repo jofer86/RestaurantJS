@@ -1,21 +1,12 @@
 import getDOM from './UIController';
 import { cont } from './Content';
+import Menu from './Menu';
+import Contact from './Contact'
 
 const { menu, contact, find } = cont();
 
 const onClk = () => (
   {
-    menu: () => {
-      const tacoMen = document.createElement('div');
-      const remo = document.querySelector('.remove');
-      if (remo) {
-        remo.remove();
-      }
-      tacoMen.className = 'menu__container remove';
-      getDOM().content.appendChild(tacoMen);
-      getDOM().menuContent.innerHTML = menu;
-      window.location = 'index.html#jumpHere';
-    },
     contact: () => {
       const tacoNtact = document.createElement('div');
       const remo = document.querySelector('.remove');
@@ -44,12 +35,12 @@ const onClk = () => (
 const clicked = (e) => {
   const target = e.srcElement;
   if (target.id === '1') {
-    onClk().menu();
+    Menu.render();
     getDOM().contact.classList.remove('clicked');
     getDOM().find.classList.remove('clicked');
     getDOM().menu.classList.add('clicked');
   } else if (target.id === '2') {
-    onClk().contact();
+    Contact.render();
     getDOM().contact.classList.add('clicked');
     getDOM().find.classList.remove('clicked');
     getDOM().menu.classList.remove('clicked');
