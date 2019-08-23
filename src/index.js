@@ -22,7 +22,7 @@ const clicked = (e) => {
   } else {
     Find.render()
     cleanup()
-    document.getElementById(3).classList.add('clicked')    
+    document.getElementById(3).classList.add('clicked')
   }
 }
 
